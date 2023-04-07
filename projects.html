@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <!--Links favicon icon and changes tab title to "My Projects"-->
+    <head>
+        <meta charset="UTF-8">
+        <title>My Projects</title>
+        <link rel="icon" href="/assets/favicon.ico">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <!--Navigation bar-->
+        <header>
+            <nav>
+                <div id="website-logo">
+                    <a href="index.html">
+                        <img src="assets/Logo.png" alt="Website Logo" width="50" height="50">
+                    </a>
+                </div>
+                
+                <div id="webpages">
+                    <a href="index.html" class="weblinks">Home</a>
+                    <a href="about.html" class="weblinks">About Me</a>
+                    <a href="projects.html" class="underline weblinks same">Projects</a>
+                </div>
+                
+                <div id="contact-links">
+                    <a href="#contact">Email</a>
+                    <a href="https://www.linkedin.com/in/kuruvilla-kevin/" target="_blank">LinkedIn</a>                 
+                    <a href="assets/my_resume.pdf" target="_blank">Resume</a>
+                </div>
+
+                <div id="hamburger-button">
+                    <div class="hamburger-button"></div>
+                    <div class="hamburger-button"></div>
+                    <div class="hamburger-button"></div>
+                </div>
+            </nav>
+        </header>
+
+        <div id="menu" class="hide">
+            <ul>
+                <li><a href="index.html" class="weblinks">Home</a></li>
+                <li><a href="about.html" class="weblinks">About Me</a></li>
+                <li><a href="projects.html" class="weblinks same">Projects</a></li>
+                <li><a href="mailto:kv929095@dal.ca" class="weblinks">Email</a></li>
+                <li><a href="https://www.linkedin.com/in/kuruvilla-kevin/" target="_blank" class="weblinks">LinkedIn</a></li>
+                <li><a href="assets/my_resume.pdf" target="_blank" class="weblinks">Resume</a></li>
+            </ul>
+        </div>
+
+        <div id="all">
+            <!--Project section, lists all my projects along with relevant videos-->
+            <div id="projects">
+                <h1>My Favorite Projects</h1>
+                <ol>
+                    <li><b>CSCI1108 Robotics Competition</b>
+                        <ul>
+                            <li>Designed a robot to use odometry to complete an unknown track</li>
+                            <li>
+                                <img src="assets/robotics competition.png" alt="Photo at the day of robotics competition">
+                            </li>
+                        </ul>
+                    </li>
+                    <li><b>Twitter Vibe Checker</b>
+                        <ul>
+                            <li>Designed an NLP model to understand twitter sentiment</li>
+                            <li>
+                                <img src="assets/twitter model.png" alt="Sample output from my Twitter sentiment NLP model">
+                            </li>
+                        </ul>
+                    </li>
+                    <li><b>Blindfold Chess Trainer</b>
+                        <ul>
+                            <li>Created a program that randomly generates a chess puzzle that you solve blindfolded</li>
+                            <li>
+                                <img src="assets/chess project.png" alt="Chess board during solving process">
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+            
+            <footer>
+                <!--Contact form-->
+                <div id="contact">
+                    <h2>Get in Touch</h2>
+                    <form action="https://example.com/" method="post">
+                        <p>
+                            <label for="email">Email: <br></label>
+                            <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+                        </p>
+                        <p>
+                            <label for="message">Message: <br></label>
+                            <textarea id="message" name="message" placeholder="How can I help?" required></textarea>
+                        </p>
+                        <input type="submit" value="Send">
+                    </form>
+
+                    <!--Simple link that brings user back to top of page-->
+                    <a href="#"><br>Back to Top</a>
+                </div>
+            </footer>
+        </div>
+        
+
+        <script src="script.js" type="text/javascript"></script>
+    </body>
+</html>

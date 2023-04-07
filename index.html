@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--Links favicon and renames tab title to "Home"-->
+    <head>
+        <meta charset="UTF-8">
+        <title>Home</title>
+        <link rel="icon" href="/assets/favicon.ico">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <!--Navigation bar-->   
+        <header>
+            <nav>
+                <div id="website-logo">
+                    <a href="index.html">
+                        <img src="assets/Logo.png" alt="Website Logo">
+                    </a>
+                </div>
+                
+                <div id="webpages">
+                    <a href="index.html" class="underline weblinks same">Home</a>
+                    <a href="about.html" class="weblinks">About Me</a>
+                    <a href="projects.html" class="weblinks">Projects</a>
+                </div>
+                
+                <div id="contact-links">
+                    <a href="#contact">Email</a>
+                    <a href="https://www.linkedin.com/in/kuruvilla-kevin/" target="_blank">LinkedIn</a>                 
+                    <a href="assets/my_resume.pdf" target="_blank">Resume</a>
+                </div>
+
+                <div id="hamburger-button">
+                    <div class="hamburger-button"></div>
+                    <div class="hamburger-button"></div>
+                    <div class="hamburger-button"></div>
+                </div>
+            </nav>
+        </header>
+
+        <div id="menu" class="hide">
+            <ul>
+                <li><a href="index.html" class="weblinks same">Home</a></li>
+                <li><a href="about.html" class="weblinks">About Me</a></li>
+                <li><a href="projects.html" class="weblinks">Projects</a></li>
+                <li><a href="mailto:kv929095@dal.ca" class="weblinks">Email</a></li>
+                <li><a href="https://www.linkedin.com/in/kuruvilla-kevin/" target="_blank" class="weblinks">LinkedIn</a></li>
+                <li><a href="assets/my_resume.pdf" target="_blank" class="weblinks">Resume</a></li>
+            </ul>
+        </div>
+
+        <div id="all">    
+            <main>
+                <!--Quick introduction for user-->
+                <div id="intro">
+                    <div id="content">
+                        <div id="hero">
+                            <img src="assets/portrait.png" alt="Hero Image">
+                            <p>This is me</p>
+                        </div>
+                        <div id="text">
+                            <h3>Hi, my name is</h3>
+                            <h1><span class="highlight">Kevin Kuruvilla</span></h1>
+                            <ul>
+                                <li>First-year BCS student at Dalhousie University</li>
+                                <li>Passion for deep learning and NLP</li>
+                                <li>Aim to become a DL engineer</li>
+                                <li>Proficient in Java and Python</li>
+                                <li>Experience with Tensorflow</li>
+                                <li>Done some robotics projects</li>
+                                <li>Notetaker for Dalhousie</li>
+                                <li>Love chess and Rubik's cubes</li>
+                            </ul>
+                            <a href="#contact" class="underline">
+                                Always open to new opportunities and collaborations
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--This is the section where I describe my proficiency in languages-->
+                <div id="languages">
+                    <table>
+                        <tr>
+                            <th colspan="3">Programming Languages</th>
+                        </tr>
+                        <tr>
+                            <th>Language</th>
+                            <th>Proficiency</td>
+                            <th>How I learnt it</td>
+                        </tr>
+                        <tr>
+                            <td>Java</th>
+                            <td>Proficient</td>
+                            <td>University</td>
+                        </tr>
+                        <tr>
+                            <td>Python</th>
+                            <td>Proficient</td>
+                            <td>Self-taught</td>
+                        </tr>
+                        <tr>
+                            <td>C#</th>
+                            <td>Learning</td>
+                            <td>Self-taught</td>
+                        </tr>
+                    </table>
+                </div>
+            </main>
+            
+            <footer>
+                <!--Contact form-->
+                <div id="contact">
+                    <h2>Get in Touch</h2>
+                    <form action="https://example.com/" method="post" onsubmit="return validateForm()">
+                        <p>
+                            <label for="email">Email: <br></label>
+                            <input type="email" id="email" name="email" placeholder="example@domain.com">
+                        </p>
+                        <p>
+                            <label for="message">Message: <br></label>
+                            <textarea id="message" name="message" placeholder="How can I help?"></textarea>
+                        </p>
+                        <input type="submit" value="Send">
+                    </form>
+    
+                    <!--Simple link that brings user back to top of page-->
+                    <a href="#"><br>Back to Top</a>
+                </div>
+            </footer>
+        </div>
+    
+        <script src="script.js" type="text/javascript"></script>
+    </body>    
+</html>
