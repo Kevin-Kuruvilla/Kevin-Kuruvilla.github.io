@@ -5,7 +5,6 @@
     --text-color: #000000;
 }
 
-/* General Styles */
 * {
     text-decoration: none;
     background-color: var(--background-color);
@@ -390,6 +389,7 @@ p + img {
 
 /* Mobile Styles */
 @media screen and (max-width: 1000px) {
+    /* Introductory Styles */
     #content {
         grid-area: intro;
     

@@ -38,6 +38,7 @@
             </nav>
         </header>
 
+        <!--Menu Page-->
         <div id="menu" class="hide">
             <ul>
                 <li><a href="index.html" class="weblinks">Home</a></li>
@@ -49,6 +50,7 @@
             </ul>
         </div>
 
+        <!--Actual Page-->
         <div id="all">
             <!--Project section, lists all my projects along with relevant videos-->
             <div id="projects">
@@ -85,18 +87,18 @@
                 <!--Contact form-->
                 <div id="contact">
                     <h2>Get in Touch</h2>
-                    <form action="https://example.com/" method="post">
+                    <form action="https://example.com/" method="post" onsubmit="return validateForm()">
                         <p>
                             <label for="email">Email: <br></label>
-                            <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+                            <input type="email" id="email" name="email" placeholder="example@domain.com">
                         </p>
                         <p>
                             <label for="message">Message: <br></label>
-                            <textarea id="message" name="message" placeholder="How can I help?" required></textarea>
+                            <textarea id="message" name="message" placeholder="How can I help?"></textarea>
                         </p>
                         <input type="submit" value="Send">
                     </form>
-
+    
                     <!--Simple link that brings user back to top of page-->
                     <a href="#"><br>Back to Top</a>
                 </div>

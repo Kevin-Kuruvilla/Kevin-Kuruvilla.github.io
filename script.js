@@ -1,9 +1,9 @@
+/* Introductory text */
 // Get URL 
 const currentUrl = window.location.href;
 
-/* Introductory text */
 // Check if URL is index.html
-if (currentUrl.includes("index.html")) { //cite
+if (currentUrl.includes("index.html")) { 
     // Nodes
     const listItems = document.querySelectorAll("#text ul li");
 
@@ -23,7 +23,7 @@ if (currentUrl.includes("index.html")) { //cite
     }
 
     // Call changeListItems() function every 30 seconds
-    setInterval(changeListItem, 3000); // CITE
+    setInterval(changeListItem, 3000);
 }
 
 
@@ -45,7 +45,7 @@ function validateForm() {
 
         // Alert user of the problem
         alert("I need your email so I can get back to you!");
-
+            
         return false;
     }
     
